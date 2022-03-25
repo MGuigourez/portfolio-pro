@@ -1,12 +1,13 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import profile from '../public/profil.jpg'
+import profile from '../public/maxime.png'
 
 import { useTheme } from 'next-themes'
 
 const About = () => {
   const { theme, setTheme, resolvedTheme } = useTheme()
+
   const [mounted, setMounted] = useState(false)
 
   // When mounted on client, now we can show the UI
@@ -20,9 +21,9 @@ const About = () => {
             Bonjour,
           </h1>
           <div className="mt-6 text-gray-800 dark:text-white">
-            <p className="mb-4">
+            <p className="mb-4 text-justify">
               Je m'appelle Maxime Guigourez, je suis actuellement développeur
-              chez{' '}
+              web chez{' '}
               {mounted && (theme === 'dark' || resolvedTheme === 'dark') ? (
                 <a
                   href="https://checkandvisit.com/"
@@ -40,9 +41,18 @@ const About = () => {
                   Check & Visit{' '}
                 </a>
               )}{' '}
-              où j'effectue mon alternance depuis bientôt 2 ans en vue de
+              à Rennes où j'effectue mon alternance depuis bientôt 2 ans pour
               l'obtention d'un Master "Expert en informatique et Système
               d'information" en fin d'année 2022.
+            </p>
+
+            <p className="text-justify">
+              Après avoir rejoins l'IUT de Nantes pour un DUT Informatique j'ai
+              poursuivis sur une license professionnelle MIAR (Métiers de
+              l'informatique : Parcours Applications Réparties). J'ai pu
+              réaliser deux stages très intéressants pour moi à Youday CRM puis
+              à la centrale des magasins U dans le pôle recherche et
+              développement (voir Expériences) tout deux situés à Nantes.
             </p>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Intro from '../components/Intro/Intro'
 import About from '../components/About'
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       </Head>
 
       <main className="mx-auto mt-16 max-w-4xl antialiased">
+        <Intro />
         <About />
       </main>
     </div>
