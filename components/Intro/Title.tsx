@@ -1,14 +1,28 @@
 import React from 'react'
+import { NextPage } from 'next'
+
 import styled, { keyframes } from 'styled-components'
 
-export default function Title() {
+interface Props {
+  classTitle?: string
+}
+
+const Title: NextPage<Props> = (props) => {
   return (
-    <Wrapper className="text-5xl font-bold text-green-600">
-      {' '}
-      Web Developer
-    </Wrapper>
+    <div>
+      <h1 className={props.classTitle}>
+        {' '}
+        et je suis
+        <Wrapper className="text-5xl font-bold text-green-600">
+          {' '}
+          developpeur web
+        </Wrapper>
+      </h1>
+    </div>
   )
 }
+
+export default Title
 
 const animation = keyframes`
     0% { opacity: 0; }

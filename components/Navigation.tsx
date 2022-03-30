@@ -16,6 +16,18 @@ export const Navigation = () => {
           </a>
         </Link>
 
+        <Link href="/about">
+          <a
+            className={
+              'font-medium uppercase tracking-wider text-gray-900 transition-colors hover:text-sky-500 dark:text-white'
+            }
+          >
+            A propos
+          </a>
+        </Link>
+
+        <a>CONTACT</a>
+
         <ThemeSwitch />
       </div>
     </div>

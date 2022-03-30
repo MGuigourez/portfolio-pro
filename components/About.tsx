@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import profile from '../public/maxime.png'
+import profil from '../public/maxime.png'
 
 import { useTheme } from 'next-themes'
 
@@ -58,8 +58,8 @@ const About = () => {
         </div>
         <div className="mb-10 flex-shrink-0 lg:mt-12 lg:px-4">
           <Image
-            src={profile}
-            alt="Profile"
+            src={profil}
+            alt="photo Maxime Guigourez"
             priority={true}
             className="rounded-full"
             width={250}
